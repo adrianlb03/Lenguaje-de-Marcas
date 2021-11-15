@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario VIaje</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.jpg" />
+    <link rel="stylesheet" type="text/css" href="/referencia/style/style.css" />
   </head>
+
   <body>
-    <form action="envio.php" method="post">
+    <form action="envio.php" method="post" id="formViaje">
       <h2>Formulario de Contacto</h2>
       <fieldset>
         <legend>Formulario</legend>
@@ -16,7 +18,7 @@
         <fieldset>
           <legend>Datos personales</legend>
           <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name" value="Nombre" />
+          <input type="text" id="name" name="name" value="Nombre" autofocus/>
           <br /><br />
           <label for="apellidos">Apellidos:</label>
           <input
@@ -32,7 +34,9 @@
           <label for="Telefono">Teléfono:</label>
           <input type="tel" id="telefono" name="telefono" value="Telefono" />
         </fieldset>
+
         <br />
+
         <fieldset>
           <legend>Oferta buscada</legend>
           <label for="ciudad">Ciudad:</label>
@@ -80,10 +84,23 @@
             value="todoIncluido"
           />
           <label for="todoIncluido">Todo Incluido</label>
-          <br><br>
+          <br /><br />
           <label for="numAdultos">Número de Adultos</label>
-          <input type="number" name="numAdultos" id="numAdultos">
+          <input type="number" name="numAdultos" id="numAdultos" />
         </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Información complemtaria</legend>
+          <textarea name="otros" id="otros" cols="30" rows="10">Otros</textarea>
+        </fieldset>
+
+        <br />
+
+        <a href="/referencia/ejercicios.html#tour"><input type="button" value="Volver"></a>
+        <button type="reset">Limpiar Formulario</button>
+        <button type="submit">Enviar</button>
       </fieldset>
     </form>
   </body>

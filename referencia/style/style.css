@@ -1,17 +1,57 @@
 /*********************************************************************** */
+/*ESTILO BODY*/
+/*********************************************************************** */
+body {
+  width: 95%;
+  height: 100%;
+
+  margin: 3%;
+
+  background: -webkit-linear-gradient(
+    top,
+    rgb(91, 65, 238),
+    rgb(203, 215, 248)
+  );
+  background: -moz-linear-gradient(top, rgb(91, 65, 238), rgb(203, 215, 248));
+  background: -ms-linear-gradient(top, rgb(91, 65, 238), rgb(203, 215, 248));
+  background: -o-linear-gradient(top, rgb(91, 65, 238), rgb(203, 215, 248));
+  background: linear-gradient(top, rgb(91, 65, 238), rgb(203, 215, 248));
+}
+
+/*********************************************************************** */
+/*TABLA HORARIO*/
+/*********************************************************************** */
+#horario {
+  width: 80%;
+  margin-left: 10%;
+}
+
+/*********************************************************************** */
 /*TOURS VIAJE*/
-#formTour,td{
-    width: 25%;
+/*********************************************************************** */
+#tablaTour,
+td {
+  width: 25%;
 }
 
-#formTour,img{
-    width: 100%;
-    height: 100%;
+#tablaTour,
+img {
+  width: 100%;
+  height: 100%;
 }
 
-#formTour,th,td,tr{
-    border: 1px solid black;
-    border-collapse: collapse;
+#tablaTour,
+th,
+td,
+tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#formViaje {
+  width: 40%;
+  height: 100%;
+  margin-left: 30%;
 }
 
 /*********************************************************************** */
